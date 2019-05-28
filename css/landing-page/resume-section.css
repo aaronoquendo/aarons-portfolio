@@ -1,0 +1,51 @@
+#resume-section {
+  padding: 40px 15px 80px 15px;
+}
+
+#resume-section .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#resume-section .title .circle {
+  background: #eef9ff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+}
+
+#resume-section .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  color: #16171b;
+  z-index: 1;
+  letter-spacing: 4px;
+}
+
+#resume-section .container .a-tag-container {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resume-section .container a {
+  border-radius: 10px;
+  background: #ffeded;
+  max-width: 650px;
+  cursor: pointer;
+  padding: 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: black;
+}

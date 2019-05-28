@@ -1,0 +1,173 @@
+#services-section {
+  padding: 40px 15px;
+}
+
+#services-section .title {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#services-section .title .circle {
+  background: #eef9ff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 23px;
+}
+
+#services-section .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  color: #16171b;
+  z-index: 1;
+  letter-spacing: 4px;
+}
+
+#services-section .services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+}
+
+#services-section .services-container .box {
+  background: rgba(255, 255, 255, 0);
+  transition: all .4s ease-in-out;
+  border-radius: 5px;
+  border-top: 1px solid #52b8ff;
+  border-left: 1px solid #52b8ff;
+  border-right: 1px solid #52b8ff;
+  padding: 40px;
+  cursor: pointer;
+}
+
+#services-section .services-container .box.blue {
+  background: rgba(255, 255, 255, 0);
+  transition: all .4s ease-in-out;
+  border-radius: 5px;
+  border-top: 2px solid #52b8ff;
+  border-left: 2px solid #52b8ff;
+  border-right: 2px solid #52b8ff;
+  padding: 40px;
+  cursor: pointer;
+}
+
+#services-section .services-container .box.red {
+  background: rgba(255, 255, 255, 0);
+  transition: all .4s ease-in-out;
+  border-radius: 5px;
+  border-top: 2px solid #ff5253;
+  border-left: 2px solid #ff5253;
+  border-right: 2px solid #ff5253;
+  padding: 40px;
+  cursor: pointer;
+}
+
+#services-section .services-container .box.yellow {
+  background: rgba(255, 255, 255, 0);
+  transition: all .4s ease-in-out;
+  border-radius: 5px;
+  border-top: 2px solid #ffc853;
+  border-left: 2px solid #ffc853;
+  border-right: 2px solid #ffc853;
+  padding: 40px;
+  cursor: pointer;
+}
+
+#services-section .services-container .box:hover {
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  border-top: 2px solid #52b8ff;
+  border-left: 2px solid #52b8ff;
+  border-right: 2px solid #52b8ff;
+  -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+}
+
+#services-section .services-container .box.blue:hover {
+  background: rgba(255, 255, 255, 1);
+  border-top: 2px solid #52b8ff;
+  border-left: 2px solid #52b8ff;
+  border-right: 2px solid #52b8ff;
+  -webkit-box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+}
+
+#services-section .services-container .box.red:hover {
+  background: rgba(255, 255, 255, 1);
+  border-top: 2px solid #ff5253;
+  border-left: 2px solid #ff5253;
+  border-right: 2px solid #ff5253;
+  -webkit-box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+}
+
+#services-section .services-container .box.yellow:hover {
+  background: rgba(255, 255, 255, 1);
+  border-top: 2px solid #ffc853;
+  border-left: 2px solid #ffc853;
+  border-right: 2px solid #ffc853;
+  -webkit-box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 43px -7px rgba(0, 0, 0, 0.75);
+}
+
+#services-section .services-container .box .fas {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#services-section .services-container .box h5 {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+}
+
+#services-section .services-container .box p {
+  font-size: .8rem;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #16171b;
+}
+
+#services-section .services-container .box.blue {
+  border-bottom: 2px solid #52b8ff;
+}
+
+#services-section .services-container .box.red {
+  border-bottom: 2px solid #ff5253;
+}
+
+#services-section .services-container .box.yellow {
+  border-bottom: 2px solid #ffc853;
+}
+
+/* Tablets*/
+@media screen and (max-width: 960px) {
+  #services-section .services-container {
+    grid-template-columns: 100%;
+  }
+
+  #services-section .services-container .box {
+    background: rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+    -moz-box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0px 40px 74px 24px rgba(0, 0, 0, 0.08);
+  }
+}
+
+/* Phones*/
+@media screen and (max-width: 767px) {}
