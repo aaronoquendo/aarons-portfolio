@@ -1,0 +1,532 @@
+body {
+  background: ##f0ffff;
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+  padding: 0;
+  color: #333333;
+  width: 1000px;
+}
+
+/*Maybe change about to width:80% */
+
+/*Below is the header CSS*/
+
+.header-wrapper {
+  width: 100%;
+  height: 45px;
+  padding: 0px 0 8px 0;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+  box-shadow: inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC;
+}
+
+.header {
+  margin: 0 auto;
+  padding-top: 6px;
+  max-width: 80%;
+}
+
+.header .logo {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: left;
+  margin-right: 50px;
+  font-size: 23px;
+}
+
+.header .logo img {
+  padding: 0px;
+  margin: 0;
+  width: 70px;
+  height: 40px;
+  margin-left: 10px;
+}
+
+.header .search {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border: 1px solid #b2b2b2;
+  border-radius: 50px;
+  display: inline-block;
+  float: left;
+  padding: 4px;
+  margin: 0;
+  margin-top: 4px;
+  height: 20px;
+}
+
+.header .search input {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: transparent;
+  display: inline-block;
+  height: 25px;
+  width: 275px;
+}
+
+.header .header-links {
+  margin-top: 8px;
+  margin-left: 10px;
+  padding: 0;
+  display: inline-block;
+  float: right;
+}
+
+.header .header-links ul {
+  display: inline-table;
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 0;
+  float: right;
+}
+
+.header .header-links ul li {
+  display: inline;
+  list-style-position: inside;
+  margin-right: 10px;
+  padding: 0;
+  display: inline-block;
+}
+
+.header .header-links ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*Below is the header CSS*/
+
+.header2-wrapper {
+  width: 100%;
+  height: 45px;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid #b2b2b2;
+  box-shadow: inset 0px 11px 8px -10px #CCC, inset 0px -11px 8px -10px #CCC;
+}
+
+.header2 {
+  max-width: 80%;
+  margin: auto;
+  padding: 0;
+  height: 45px;
+}
+
+.header2 ul {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  padding: 0;
+}
+
+.header2 ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header2 ul li a {
+  color: black;
+  text-decoration: none;
+  list-style: none;
+}
+
+/*Below is the item-section CSS*/
+
+.item-section {
+  padding-top: 40px;
+  height: 510px;
+  width: 80%;
+  margin: auto;
+}
+
+.item-section .top-section h2 {
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.buttons {
+  display: inline-block;
+  float: right;
+}
+
+.item-section .top-section .buttons ul {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.item-section .top-section .buttons ul li {
+  display: inline-block;
+  margin: 0;
+  margin-right: 10px;
+  padding: 5px;
+  border: 2px solid #b2b2b2;
+  border-radius: 2px;
+  font-weight: bolder;
+}
+
+.item-section .top-section p {
+  margin: 0;
+  padding-top: 10px;
+}
+
+.item-section .top-section p span {
+  color: #60AB45;
+  font-weight: bolder;
+}
+
+.item-section .bottom-section {
+  height: 425px;
+}
+
+.item-section .bottom-section img {
+  height: 400px;
+  width: 500px;
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+}
+
+.item-section .bottom-section .content {}
+
+/*Buy section*/
+
+.item-section .bottom-section .buy {
+  width: 220px;
+  margin: 0;
+  margin-top: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  float: left;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.item-section .bottom-section .buy h5 {
+  margin: 0px;
+  padding: 0;
+  float: left;
+}
+
+.item-section .bottom-section .buy .buybtn {
+  margin: 0;
+  padding: 10px;
+  float: right;
+  display: inline-block;
+  border: 2px solid #60AB45;
+  border-radius: 2px;
+  background: #60AB45;
+  color: #FFF;
+  font-weight: bolder;
+  -webkit-box-shadow: -2px 1px 34px 9px rgba(229, 229, 229, 0.48);
+  -moz-box-shadow: -2px 1px 34px 9px rgba(229, 229, 229, 0.48);
+  box-shadow: -2px 1px 34px 9px rgba(229, 229, 229, 0.48);
+}
+
+.item-section .bottom-section .buy .buybtn span {
+  color: #e5e5e5;
+}
+
+.item-section .bottom-section .buy h4 {
+  margin-top: 10px;
+  padding: 0 0 0 0px;
+  font-size: 35px;
+  float: left;
+  margin-bottom: 0;
+}
+
+.item-section .bottom-section .buy p {
+  font-size: 12px;
+  float: left;
+}
+
+.item-section .bottom-section .buy p span {
+  color: #60AB45;
+  font-weight: bolder;
+}
+
+/*Sell section below*/
+
+.item-section .bottom-section .sell {
+  width: 220px;
+  margin: 0;
+  margin-top: 10px;
+  padding-top: 20px;
+  float: left;
+}
+
+.item-section .bottom-section .sell h5 {
+  margin: 0px;
+  padding: 0;
+  float: left;
+}
+
+.item-section .bottom-section .sell .sellbtn {
+  padding: 10px;
+  display: inline-block;
+  float: right;
+  border: 2px solid #ED6B66;
+  border-radius: 2px;
+  background: #ED6B66;
+  color: #FFF;
+  font-weight: bolder;
+}
+
+.item-section .bottom-section .sell .sellbtn span {
+  color: #e5e5e5;
+}
+
+.item-section .bottom-section .sell h4 {
+  margin-top: 10px;
+  padding: 0 0 0 0px;
+  font-size: 35px;
+  float: left;
+  margin-bottom: 0px;
+}
+
+/* Dropdown Button */
+
+.dropdown {
+  margin-top: 30px;
+  position: relative;
+  display: inline-block;
+  background-color: #FFF;
+  width: 220px;
+  height: 36px;
+  color: black;
+  padding: 0px;
+  font-size: 16px;
+}
+
+.dropdown .dropbtn {
+  width: 220px;
+  height: 36px;
+  text-align: left;
+  border: 2px solid #b2b2b2;
+  border-radius: 8px;
+  background-color: #FFF;
+}
+
+.dropdown .right-span {
+  float: right;
+}
+
+/* Info-section is below */
+
+.info-section {
+  width: 80%;
+  margin: auto;
+  margin-top: 0px;
+  height: 350px;
+}
+
+/* Info-section left area is below */
+
+.info-section .left-area {
+  width: 45%;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.info-section .left-area .info-header {
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.info-section .left-area .info-items .item {
+  padding: 15px 0 15px 0;
+  border-top: 1px solid #b2b2b2;
+}
+
+.info-section .left-area .info-items .last-item {
+  padding: 15px 0 15px 0;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
+}
+
+.info-section .left-area .info-items .left-span {}
+
+.info-section .left-area .info-items .right-span {
+  float: right;
+}
+
+/* Info-section right area is below */
+
+.info-section .right-area {
+  width: 45%;
+  float: right;
+}
+
+.info-section .right-area .info-header {
+  margin: 0;
+  color: black;
+}
+
+.info-section .right-area .info-items .item {
+  padding: 15px 0 15px 0;
+  border-top: 1px solid #b2b2b2;
+}
+
+.info-section .right-area .info-items .item .money {
+  color: #ED6B66;
+}
+
+.info-section .right-area .info-items p {
+  color: gray;
+}
+
+.info-section .left-area .info-items .left-span {}
+
+.info-section .right-area .info-items .right-span {
+  float: right;
+}
+
+/* My Charts Js chart is here */
+
+#myChart {
+  width: 100px;
+  margin: auto;
+  height: 400px;
+  padding: 0;
+}
+
+#myChart .chart-container .title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 18px;
+}
+
+.chart-container {
+  width: 80%;
+  margin: auto;
+}
+
+.moretobuy {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+.moretobuy .title {
+  margin: 0;
+  padding: 0;
+}
+
+/*More to buy section*/
+
+.moretobuy .title .left-span {
+  color: black;
+}
+
+.moretobuy .title .right-span {
+  float: right;
+  color: #60AB45;
+}
+
+/*recommended section*/
+
+.moretobuy .recommended {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.moretobuy .recommended .shoe {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.moretobuy .recommended .shoe .price-span {
+  color: #60AB45;
+}
+
+.moretobuy .recommended .shoe .info-span {
+  color: #696969;
+}
+
+.moretobuy .small-imgs {
+  max-height: 100px;
+  max-width: 150px;
+}
+
+/*Related section*/
+
+.moretobuy .related {
+  margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.moretobuy .related .shoe {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.moretobuy .related .shoe .price-span {
+  color: #60AB45;
+}
+
+.moretobuy .related .shoe .info-span {
+  color: #696969;
+}
+
+.footer {
+  width: 80%;
+  margin: auto;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 70px;
+  border-top: 1px solid #b2b2b2;
+  border-bottom: 2px solid #b2b2b2;
+}
+
+.footer .section {
+  display: inline-block;
+  margin: 0;
+  margin-right: 40px;
+}
+
+.footer .section .title {
+  margin-top: 0;
+  margin-bottom: 0px;
+  color: black;
+}
+
+.footer .section .links {
+  color: #696969;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.footer .social-media {
+  display: inline-block;
+  float: right;
+}
+
+.footer .social-media .imgs {
+  max-width: 30px;
+  max-height: 25px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.copyright {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 90px;
+}
+
+.copyright .left-span {}
+
+.copyright .right-span {
+  float: right;
+}
