@@ -1,0 +1,1329 @@
+/*--------------------*/
+/*Below is a css reset*/
+/*--------------------*/
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*------------------------------------------*/
+/* Below is a basic CSS grid system is below*/
+/*------------------------------------------*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 49%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+/* Below is some utility CSS*/
+.hide {
+  display: none;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/roboto/roboto-regular.ttf);
+}
+
+body {
+  font-family: Roboto;
+}
+
+/*Below are CSS variables I've defined */
+:root {
+  --header-height: 50px;
+  --header-item-color: #fbfefe;
+}
+
+/*-----------------------------*/
+/*Below is the #site-header CSS*/
+/*-----------------------------*/
+#site-header {
+  height: var(--header-height, 50px);
+  background: #2c3c44;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  display: block;
+}
+
+#site-header .fas.fa-bars {
+  display: none;
+  color: white;
+  margin-left: 15px;
+  font-size: 2rem;
+}
+
+#site-header .container {
+  height: var(--header-height, 50px);
+  background: #2c3c44;
+}
+
+#site-header .nav-items {
+  height: var(--header-height, 50px);
+  color: var(--header-item-color, #fbfefe);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+}
+
+#site-header .nav-items .nav-item {
+  padding-left: 54px;
+}
+
+#site-header .nav-items .nav-item a {
+  padding: 12px 4px;
+  color: var(--header-item-color, #fbfefe);
+  text-decoration: none;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+#site-header .nav-items .nav-item:last-child a {
+  padding-right: 0px;
+}
+
+#site-header .nav-items .nav-item a:hover {
+  color: #e69529;
+}
+
+/*---------------------------*/
+/*Below is the #section-1 CSS*/
+/*---------------------------*/
+#section-1 {
+  display: block;
+  background-image: url("../images/Desktop_images/Hero_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 700px;
+  border-bottom: 14px solid #e69527;
+}
+
+#section-1 .container {
+  position: relative;
+  height: 100%;
+}
+
+#section-1 .container .title {
+  padding: 100px 10px 0 10px;
+  text-align: center;
+  letter-spacing: .15rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+#section-1 .container .desktop-logo {
+  position: absolute;
+  bottom: 55px;
+  right: 0px;
+  width: 225px;
+  height: 79px;
+}
+
+#section-1 .container .mobile-logo {
+  display: none;
+}
+
+/*---------------------------*/
+/*Below is the #section-2 CSS*/
+/*---------------------------*/
+#section-2 {
+  display: block;
+}
+
+#section-2 .container h2 {
+  text-align: center;
+  padding: 60px 0 50px 0;
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+}
+
+#section-2 .container .row {
+  display: flex;
+}
+
+#section-2 .container .row .widget {
+  padding: 0 4px;
+}
+
+#section-2 .container .row .widget .widget-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-2 .container .row .widget.widget1 .widget-top {
+  height: 200px;
+  background-image: url("../images/Desktop_images/LE.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#section-2 .container .row .widget.widget2 .widget-top {
+  height: 200px;
+  background-image: url("../images/Desktop_images/LE_hybrid.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#section-2 .container .row .widget.widget3 .widget-top {
+  height: 200px;
+  background-image: url("../images/Desktop_images/XLE.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+#section-2 .container .row .widget .widget-top .model-link {
+  transition: background-color 55ms linear;
+}
+
+#section-2 .container .row .widget .widget-top .model-link:hover {
+  background: #e69527;
+}
+
+#section-2 .container .row .widget .widget-top .model-link .model-type {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  padding: 10px 46px;
+}
+
+#section-2 .container .row .widget .widget-top .model-link .model-type h3 {
+  text-align: center;
+  color: white;
+  width: 75px;
+  font-size: 1.5rem;
+  width: 110px;
+}
+
+#section-2 .container .row .widget .widget-bottom {
+  width: 100%;
+  background: #ebebeb;
+  padding: 25px 20px 25px 20px;
+}
+
+#section-2 .container .row .widget .widget-bottom .price {
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#section-2 .container .row .widget .widget-bottom .interest-rate {
+  display: block;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+#section-2 .container .row .widget .widget-bottom .driving-system {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+#section-2 .container .row .widget .widget-bottom .model-description {
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  margin: 0 10px;
+  min-height: 63.5px;
+}
+
+#section-2 .model-table {
+  margin: 70px auto 80px auto;
+  width: 65%;
+}
+
+#section-2 .mobile-model-table {
+  display: none;
+}
+
+#section-2 .model-table .table-header-row {
+  text-align: left;
+  border-bottom: 5px solid #e69527;
+}
+
+#section-2 .model-table .table-header-row .table-header-col {
+  padding: 10px 8px;
+  font-weight: bold;
+}
+
+#section-2 .model-table .table-data-row .table-col1 {
+  padding: 14px 8px;
+  font-weight: bold;
+}
+
+#section-2 .model-table .table-data-row-alt {
+  background: #f7f7f7;
+}
+
+#section-2 .model-table .table-data-row-alt .table-col1 {
+  padding: 14px 8px;
+  font-weight: bold;
+}
+
+/*---------------------------*/
+/*Below is the #section-3 CSS*/
+/*---------------------------*/
+#section-3 {
+  background-image: url("../images/Desktop_images/Learn_more_BG_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 564px;
+}
+
+#section-3 {
+  display: flex;
+  align-items: center;
+}
+
+#section-3 .info-box {
+  background: white;
+  height: auto;
+  opacity: .9;
+}
+
+#section-3 .info-box .info-box-content {
+  padding: 60px 25px 60px 36px;
+  margin: 0 auto;
+  width: 85%;
+}
+
+#section-3 .info-box .info-box-content h2 {
+  font-size: 3.0rem;
+  margin-bottom: 28px;
+}
+
+#section-3 .info-box .info-box-content p {
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  margin-bottom: 30px;
+  max-width: 433px;
+}
+
+#section-3 .info-box .info-box-content button {
+  transition: background-color 60ms linear;
+  background: #35a6cc;
+  padding: 20px 22px;
+  width: 298px;
+  border-radius: 0;
+  margin-bottom: 8px;
+}
+
+#section-3 .info-box .info-box-content button:hover {
+  background-color: #e69527;
+  cursor: pointer;
+}
+
+#section-3 .info-box .info-box-content button span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*---------------------------*/
+/*Below is the #section-4 CSS*/
+/*---------------------------*/
+#section-4 {
+  position: relative;
+  height: 570px;
+  border-bottom: 1px solid #707273;
+}
+
+#section-4 .highlight-tl-img {
+  position: absolute;
+}
+
+#section-4 .highlight-br-img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#section-4 h2 {
+  text-align: center;
+  padding: 65px 0;
+  font-size: 2.2rem;
+}
+
+#section-4 .container {}
+
+#section-4 .container .row {}
+
+#section-4 .container .row .highlight {
+  vertical-align: top;
+  display: inline-block;
+}
+
+#section-4 .container .row .highlight .title {
+  text-align: center;
+  color: #e29328;
+  font-size: 5rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+#section-4 .container .row .highlight .sub-title {
+  font-size: 1.62rem;
+  text-align: center;
+  display: block;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#section-4 .container .row .highlight .link {
+  color: #539cda;
+  text-align: center;
+  display: inline-block;
+  padding: 12px 10px;
+  width: 100%;
+  line-height: 24px;
+}
+
+#section-4 .container .row .highlight .link span {
+  text-align: center;
+}
+
+#section-4 .container .row .highlight .link p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 240px;
+}
+
+/*---------------------------*/
+/*Below is the #section-5 CSS*/
+/*---------------------------*/
+#section-5 {
+  height: 650px;
+  background-image: url("../images/Desktop_images/Safety_speed_BG_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#section-5 .spec-box1 {
+  position: absolute;
+  right: 0;
+  background: white;
+  width: 35%;
+  height: 50%;
+}
+
+#section-5 .spec-box1 .box-content {
+  padding: 45px 40px 0 40px;
+  max-width: 375px;
+}
+
+#section-5 .spec-box1 .box-content h2 {
+  font-size: 2.4rem;
+  margin-bottom: 24px;
+}
+
+#section-5 .spec-box1 .box-content p {
+  line-height: 28px;
+}
+
+#section-5 .spec-box2 {
+  position: absolute;
+  bottom: 0;
+  opacity: .9;
+  background: #2a3942;
+  width: 68.5%;
+  height: 50%;
+}
+
+#section-5 .spec-box2 .box-content {
+  padding: 60px 40px 0 50px;
+}
+
+#section-5 .spec-box2 .box-content h2 {
+  color: white;
+  font-size: 2.4rem;
+  margin-bottom: 28px;
+}
+
+#section-5 .spec-box2 .box-content p {
+  color: white;
+  line-height: 28px;
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+
+#section-5 .spec-box2 .box-content a {
+  color: white;
+  text-decoration: underline;
+}
+
+/*---------------------------*/
+/*Below is the #section-6 CSS*/
+/*---------------------------*/
+#section-6 {
+  padding: 10px 0;
+}
+
+#section-6 h2 {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 2.5rem;
+}
+
+#section-6 .container {}
+
+#section-6 .container .features {
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 80px;
+}
+
+#section-6 .container .features-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 52px;
+}
+
+#section-6 .container .features-item .feature-img {
+  width: 100px;
+  height: 75px;
+  margin-right: 30px;
+}
+
+#section-6 .container .features-item .feature-text {
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 26px;
+}
+
+/*---------------------------*/
+/*Below is the #section-7 CSS*/
+/*---------------------------*/
+#section-7 {
+  height: 750px;
+}
+
+#section-7 .top {
+  background-image: url("../images/Desktop_images/Testimonials_BG_desktop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 475px;
+}
+
+#section-7 .top h2 {
+  padding: 65px 0;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+#section-7 .container {
+  height: auto;
+}
+
+#section-7 .review-container {
+  z-index: 0;
+  width: 100%;
+  height: 1000px;
+  position: absolute;
+}
+
+#section-7 .review-container .mobile-title {
+  display: none;
+}
+
+#section-7 .review-container .reviews {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#section-7 .review-container .reviews .review {
+  background: white;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 242px;
+}
+
+#section-7 .review-container .reviews .review {
+  padding: 28px 40px;
+  -webkit-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+  -moz-box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+  box-shadow: -2px 3px 5px -3px rgba(148, 136, 148, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#section-7 .review-container .reviews .review .quote {
+  font-size: 2.1rem;
+  margin-bottom: 35px;
+  line-height: 44px;
+  min-height: 191px;
+  font-style: italic;
+}
+
+#section-7 .review-container .reviews .reviewer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#section-7 .review-container .reviews .reviewer p .name {
+  font-weight: 800;
+}
+
+#section-7 .review-container .reviews .reviewer img {
+  width: 75px;
+  margin-right: 15px;
+}
+
+#section-7 .review-container .reviews .reviewer p {
+  margin: 0;
+}
+
+#section-7 .bottom {
+  background: #f9f9f9;
+  height: 265px;
+}
+
+/*---------------------------*/
+/*Below is the #section-8 CSS*/
+/*---------------------------*/
+#section-8 {
+  height: 120px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+}
+
+#section-8 button {
+  background-color: #35a6cc;
+  transition: background-color 60ms linear;
+  padding: 5px 15px;
+  width: 250px;
+  height: 50px;
+  border-radius: 0;
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+  z-index: 1;
+}
+
+#section-8 button:hover {
+  background-color: #e69527;
+  color: white;
+  cursor: pointer;
+}
+
+#section-8 button span:hover {
+  background: #e69527;
+  color: white;
+}
+
+#section-8 button span {
+  color: black;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+/*-----------------------------*/
+/*Below is the #site-footer CSS*/
+/*-----------------------------*/
+#site-footer {
+  min-height: 100px;
+  background: #2b3c44;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+#site-footer .footer-list {
+  z-index: 1;
+  display: flex;
+  color: white;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+#site-footer .footer-item {
+  color: white;
+  text-align: center;
+  margin-right: 20px;
+  letter-spacing: 1.2px;
+}
+
+#site-footer .footer-item a {
+  color: white;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+#site-footer .footer-item a:hover {
+  text-decoration: none;
+  color: #e69527;
+}
+
+#site-footer .footer-separator {
+  color: white;
+  margin-right: 20px;
+}
+
+#site-footer .footer-logo {
+  display: none;
+}
+
+#site-footer span {
+  display: block;
+  color: white;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 12px;
+}
+
+/*---------------------------------------------------------------------*/
+/*Below is the CSS for all screen sizes that are not desktops*/
+/*---------------------------------------------------------------------*/
+@media (max-width: 483px) {
+  #section-1 {
+    max-height: 390px !important;
+  }
+
+  #section-1 .container .title {
+    padding-bottom: 34px !important;
+  }
+}
+
+@media (max-width: 525px) {
+  #section-1 {}
+
+  #section-3 .info-box {
+    margin: 0px 12px !important;
+  }
+}
+
+@media (max-width: 630px) {
+  #site-header .container {
+    display: flex;
+    align-items: center;
+  }
+
+  #site-header .nav-items {
+    display: none;
+  }
+
+  #site-header .fas.fa-bars {
+    display: inline-block;
+  }
+
+  #section-2 .container h2 {
+    font-size: 2.1rem;
+  }
+
+  #section-2 .container .row {
+    flex-direction: column;
+  }
+
+  #section-2 .container .row .widget {
+    padding: 0;
+  }
+
+  #section-2 .container .row .widget {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #section-2 .container .row .widget .widget-bottom {
+    min-height: 0 !important;
+  }
+
+  #section-2 .container .row .widget .widget-bottom .model-description {
+    min-height: 36.5px !important;
+  }
+
+  #section-2 .model-table {
+    display: none;
+  }
+
+  #section-2 .mobile-model-table {
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 60px;
+    width: 90%;
+    min-width: 300px;
+  }
+
+  #section-2 .mobile-model-table {
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+  }
+
+  #section-2 .mobile-model-table tbody {
+    margin: 0 auto;
+  }
+
+  #section-2 .mobile-model-table .table-header-row {
+    text-align: left;
+    border-bottom: 5px solid #e69527;
+  }
+
+  #section-2 .mobile-model-table .table-header-row .table-header-col {
+    padding: 10px 4px;
+    font-weight: bold;
+  }
+
+  #section-2 .mobile-model-table .table-data-row .table-col1 {
+    padding: 14px 4px;
+    min-width: 180px;
+    font-weight: bold;
+  }
+
+  #section-2 .mobile-model-table .table-data-row .table-data {
+    padding: 14px 4px;
+    min-width: 180px;
+    font-weight: bold;
+  }
+
+  #section-2 .mobile-model-table .table-data-row-alt {
+    background: #f7f7f7;
+    border-bottom: 3px solid #ededed;
+  }
+
+  #section-2 .mobile-model-table .table-data-row-alt .table-col1 {
+    padding: 14px 4px;
+    font-weight: bold;
+  }
+
+  #section-3 {
+    height: 425px;
+  }
+
+  #section-3 .info-box {
+    margin: 0 12px;
+  }
+
+  #section-3 .info-box .info-box-content {
+    padding: 40px 25px 40px 26px;
+  }
+
+  #section-3 .info-box .info-box-content button {
+    width: 250px;
+  }
+
+  #section-4 {
+    height: unset;
+  }
+
+  #section-4 .highlight-tl-img {
+    display: none;
+  }
+
+  #section-4 .highlight-br-img {
+    display: none;
+  }
+
+  #section-4 .container .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #section-4 .container .highlight {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  #section-7 {
+    height: 962px;
+  }
+
+  #section-7 .top {
+    display: none;
+  }
+
+  #section-7 .top h2 {}
+
+  #section-7 .container {}
+
+  #section-7 .review-container {
+    background: #f9f9f9;
+    width: 100%;
+    height: auto;
+    position: absolute;
+  }
+
+  #section-7 .review-container .mobile-title {
+    display: block;
+    text-align: center;
+    padding: 65px 0 12px 0;
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 6% 0 6%;
+  }
+
+  #section-7 .review-container .reviews {
+    width: 100% !important;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: static;
+    top: auto;
+    left: auto;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  #section-7 .review-container .reviews .review {
+    padding: 48px 7.5%;
+    background: #f9f9f9;
+    width: 100%;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  #section-7 .review-container .reviews .review.one {
+    border-bottom: 4px solid #e8e8e8;
+  }
+
+  #section-7 .bottom {
+    display: none;
+  }
+
+  #site-footer .footer-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #site-footer .footer-list .footer-item {
+    margin-right: 0px;
+    margin-bottom: 18px;
+  }
+
+  #site-footer .footer-separator {
+    display: none;
+  }
+
+  #site-footer .footer-logo {
+    display: block;
+    margin-bottom: 30px;
+    width: 155px;
+  }
+}
+
+@media (min-width: 630px) {
+  #site-header .mobile-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width:403px) and (max-width:629px) {
+  #section-7 {
+    height: 902px;
+  }
+}
+
+@media (max-width: 709px) {
+  #section-2 .container .row .widget .widget-top .model-link .model-type {
+    padding: 10px 28px;
+  }
+
+  #section-2 .container .row .widget .widget-bottom {
+    min-height: 262px;
+  }
+
+  #section-2 .container .row .widget .widget-bottom .model-description {
+    min-height: 119.5px;
+  }
+}
+
+/*Below is the CSS for medium size devices (tablets 768px)*/
+@media (max-width: 768px) {
+  #site-header .nav-items {
+    justify-content: center;
+  }
+
+  #section-1 {
+    display: block;
+    background-image: none;
+    background: white;
+    max-height: 375px;
+    border-bottom: 14px solid #e69527;
+  }
+
+  #section-1 .container .desktop-logo {
+    display: none;
+  }
+
+  #section-1 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    margin: 0 auto;
+  }
+
+  #section-1 .container .title {
+    display: block;
+    padding: 30px 20px 50px 20px;
+    margin: 52px auto 0 auto;
+  }
+
+  #section-1 .container .mobile-logo {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #section-3 .info-box {
+    margin: 0 auto;
+  }
+
+  #section-3 .info-box .info-box-content {
+    text-align: center;
+  }
+
+  #section-4 {
+    background: #f9f9f9;
+    height: auto;
+    border-bottom: none;
+  }
+
+  #section-4 h2 {
+    padding-top: 60px;
+    padding-bottom: 40px
+  }
+
+  #section-4 .container .row .highlight {
+    width: 100% !important;
+    margin-bottom: 0px;
+  }
+
+  #section-4 .container .row .highlight .title {
+    margin-bottom: 25px;
+  }
+
+  #section-4 .container .row .highlight .sub-title {
+    margin-bottom: 20px;
+  }
+
+  #section-4 .container .row .highlight .link {
+    margin-bottom: 40px;
+  }
+
+  #section-4 .container .row .highlight .link p {
+    font-size: 1.4rem;
+    line-height: 30px;
+  }
+
+  #section-5 {
+    display: block;
+    height: auto;
+  }
+
+  #section-5 .spec-box1 {
+    position: static;
+    display: block;
+    background: white;
+    width: 100%;
+    height: 50%;
+  }
+
+  #section-5 .spec-box1 .box-content {
+    padding: 40px 40px 40px 40px;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  #section-5 .spec-box1 .box-content h2 {
+    margin-bottom: 34px;
+  }
+
+  #section-5 .spec-box1 .box-content p {}
+
+  #section-5 .spec-box2 {
+    position: static;
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  #section-5 .spec-box2 .box-content {
+    padding: 40px 40px 40px 40px;
+    margin: 0 auto;
+  }
+
+  #section-5 .spec-box2 .box-content p {
+    color: white;
+    line-height: 28px;
+    max-width: 800px;
+    margin-bottom: 34px;
+  }
+
+  #section-5 .spec-box2 .box-content h2 {
+    margin-bottom: 38px;
+  }
+
+  #section-6 .container .features {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  #section-6 .container .features-item {
+    flex-direction: column;
+  }
+
+  #section-6 .container .features-item .feature-img {
+    width: 100px;
+    height: 75px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  #section-6 .container .features-item .feature-text {
+    text-align: center;
+    padding: 0 15px;
+    line-height: 28px;
+  }
+
+  #section-7 .review-container .reviews {
+    width: 90%;
+  }
+
+  #section-7 .review-container .reviews .reviewer p .job-title {
+    display: block;
+    margin-top: 8px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/*Below is the CSS for Large devices (desktops 992px)*/
+@media (max-width: 992px) {
+  .nav-items {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #site-header .nav-items .nav-item {
+    padding: 0 25px;
+  }
+
+  #section-2 .container .row .widget .widget-bottom .model-description {
+    min-height: 83.5px;
+  }
+
+  #section-4 .highlight-tl-img {
+    display: none;
+  }
+
+  #section-4 .highlight-br-img {
+    display: none;
+  }
+
+  #section-4 .container .row .highlight {
+    width: 32%;
+  }
+
+  #section-7 .review-container.reviews {
+    width: 65%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/*Below is the CSS for Extra large devices (large desktops, 1200px)*/
+@media (max-width: 1200px) {
+  #section-7 .review-container .reviews {
+    width: 85%;
+  }
+
+  #section-3 {
+    height: 480px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+
+  #section-7 .review-container .reviews {
+    width: 56%;
+  }
+}
+
+/*----------------------------*/
+/*Below is the mobile menu CSS*/
+/*----------------------------*/
+.mobile-menu {
+  background: #2c3c44;
+  position: absolute;
+  flex-direction: column;
+  display: none;
+  top: 50px;
+  width: 100%;
+  text-align: center;
+  list-style: none;
+  z-index: 10;
+  transform: translate3d(0, -100%, 0);
+  transition: all .4s ease-in-out;
+}
+
+.mobile-menu .li {}
+
+.mobile-menu.active .menu-link {
+  padding: 0px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 2.5px solid rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.mobile-menu.active .menu-link a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 0px;
+  text-decoration: none;
+  transition: all 0.05s ease-in-out 0s;
+  color: white;
+}
+
+.mobile-menu.active .menu-link a:hover {
+  text-decoration: none;
+  color: #e69527;
+}
+
+.mobile-menu.active {
+  transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 0px 78px -15px rgba(0, 0, 0, 0.75);
+}
+
+.menu-btn {
+  cursor: pointer;
+}
+
+.active {
+  display: flex;
+}

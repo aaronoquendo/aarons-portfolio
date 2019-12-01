@@ -1,0 +1,2 @@
+To use sass live watch us this command
+sass --watch sass:css
